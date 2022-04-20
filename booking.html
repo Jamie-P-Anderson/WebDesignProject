@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="">
+        <meta name="Keywords" content="Cars, Clean, Valet">
+        <meta name="Author" content="Jamie Anderson">
+        <title>We Clean Cars</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="styles/mainstyle.css"/>
+
+        <style>
+
+            body
+            {
+                font-family: sans-serif;
+                background-image: linear-gradient( gold, rgba(255,0,0,0));
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 10px;
+            }
+            main
+            {
+                margin: 15px 200px;
+                padding: 20px;
+                border: black solid 1px;
+                background: white;
+                min-height: 300px;
+            }
+            header p
+            {
+                font-style: italic;
+                text-align: center;
+                font-weight: 900;
+            }
+            .required
+            {
+                font-weight: bold;
+                color: red;
+            }
+            label
+            {
+                float: left;
+                width: 112px;
+                padding-right: 10px;
+                text-align: right;
+            }
+            input
+            {
+                margin-left: 1em;
+                margin-bottom: .5em;
+                width: 300px;
+            }
+
+            input[type="checkbox"]{width: 15px;}
+            input[type="radio"]{width: 10px;}
+
+            #button, #reset
+            {
+            margin-top: .5em;
+            width: 8em;
+            background-color: orange;
+            border: 2px solid black; 
+            }
+            footer 
+            {
+              text-align: center;
+              padding: 3px;
+              background-color: navy;
+              color: white;
+            }
+        </style>
+    <head>
+        <body>
+            <header>
+                <img style="float:left;" src="images/logo.png" alt="logo" width="100">
+            <h1>We Clean Cars!</h1>
+            <nav>
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a class ="active" href="booking.html">Booking</a></li>
+                </ul>
+            </nav>
+                <p>Any Queries or feedback please contact us</p>
+            </header>
+            <main>
+                <section>
+                    <h3>
+                        Plese enter the following information to book:
+                        <form action="http:/foo.com" method="put">
+                        <label for="first_name">First name:<span class="required">*</span></label>
+                        <input type="text" name="first_name" id="first_name" autofocus required><br>
+
+                        <label for="last_name">Last name:<span class="required">*</span></label>
+                        <input type="text" name="last_name" id="last_name" required><br>
+
+                        <label for="email">Email:<span class="required">*</span></label>
+                        <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                        
+                        <label for="internet">how did you hear of us:</label>
+                        <fieldset>
+                            <input type="checkbox" id="internet" name="internet" value="internet" checked> internet <br>
+                            <input type="checkbox" class="margin1" id="hear" name="paper" value="paper"> Newspaper<br>
+                            <input type="checkbox" class="margin1" id="hear" name="freind" value="freind"> Freind<br>
+                            <input type="checkbox" class="margin1" id="hear" name="Add" value="Add"> Others<br>
+
+                        </fieldset><br>
+                        <label for="message">Service you wish to book:<span class ="required">*</span></label>
+                        <textarea cols="50" rows="6" id="message" name="message" placeholder="Your message must be less then 200 characters" data-maxlength="200"></textarea><br>
+                        <input type="submit" name="submit" id="button">
+                        <input type="reset" name="reset" id="reset">
+                        </form>
+                        <p style="margin-left: 138px;"><span class="required" >*</span><em>Indicates a required field</em></p>
+                        
+                    </h3>
+                </section>
+            </main>
+            <footer> 
+                <p>Copyright Jamie Anderson 2022</p>
+            </footer>
+        </body>
+
+</html>

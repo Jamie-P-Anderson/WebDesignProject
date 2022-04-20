@@ -1,0 +1,102 @@
+nav
+{
+    background-color: navy;
+    padding: 5px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:navy
+}
+
+nav ul li
+{
+    float: left;
+}
+
+nav ul li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li:hover
+{
+    background-color: lightblue;
+}
+
+.active
+{
+    background-color: blue;
+}
+
+header
+{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), navy);
+    padding: 10px;
+}
+footer
+{
+    position: relative;
+}
+
+body
+{
+    font-family: Verdana;
+    background-image: linear-gradient( gold, rgba(255,0,0,0));
+}
+
+.sectionDisplay
+{
+    text-align: center;
+    padding: 15px;
+    margin: 80px;
+    border:3px solid #b2b2b2;
+}
+
+h1
+{
+    color: black;
+    font-family: Georgia;
+}
+
+.row 
+{  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+.side 
+{
+    -ms-flex: 30%; 
+    flex: 30%;
+    background-image: url(https://images.unsplash.com/photo-1618849888061-496363a8f3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80);
+    padding: 20px;
+}
+
+.main 
+{
+    -ms-flex: 70%; 
+    flex: 70%;
+    background-image: linear-gradient( gold, rgba(255,0,0,0));
+    padding: 20px;
+}
+
+.sidetxt
+{
+    color: white;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+}
